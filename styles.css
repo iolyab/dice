@@ -5,20 +5,24 @@ h1 {
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 80px;
   align-items: center;
   justify-content: center;
 }
 
-.container {
+.dice {
   border-style: solid;
   border-color: black;
   border-radius: 10px;
   height: 200px;
   width: 400px;
   display: flex;
+  transition: transform 0.4s ease;
+  transform-origin: center;
 }
 
-.dice1 {
+.cube1 {
   border-style: solid;
   border-color: black;
   border-width: 5px;
@@ -32,7 +36,7 @@ body {
   padding: 10px 10px;
 }
 
-.dice2 {
+.cube2 {
   border-style: solid;
   border-color: black;
   border-width: 5px;
@@ -96,4 +100,19 @@ body {
   border-radius: 50%;
   grid-column: 3;
   grid-row: 3;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.rotateBtn {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.sizeRange {
+  cursor: pointer;
 }

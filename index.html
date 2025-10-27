@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="dice1">
+    <div class="dice">
+      <div class="cube1">
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
@@ -17,7 +17,7 @@
         <div class="circle"></div>
         <div class="circle"></div>
       </div>
-      <div class="dice2">
+      <div class="cube2">
         <div class="circle1"></div>
         <div class="circle2"></div>
         <div class="circle3"></div>
@@ -25,6 +25,10 @@
         <div class="circle5"></div>
       </div>
     </div>
-    <!-- <input type="range" /> -->
+    <div class="controls">
+      <input type="range" class="sizeRange" min="50" max="150" value="100" />
+      <button class="rotateBtn">Rotate</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
