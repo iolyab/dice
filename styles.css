@@ -12,9 +12,8 @@ body {
 }
 
 .dice {
-  border-style: solid;
-  border-color: black;
   border-radius: 10px;
+  border: 10px solid black;
   height: 200px;
   width: 400px;
   display: flex;
@@ -23,28 +22,24 @@ body {
 }
 
 .cube1 {
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
+  border-right: 5px solid black;
   width: 50%;
   height: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   padding: 10px 10px;
 }
 
 .cube2 {
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
+  border-left: 5px solid black;
   width: 50%;
   height: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   padding: 10px 10px;
